@@ -13,8 +13,8 @@ import org.springframework.context.annotation.ImportResource;
 @SpringBootApplication
 @ComponentScan("com.code90.studio.alaska")
 @ImportResource("classpath:dubbo-server.xml")
-public class StartServerApplication {
+public class StartAuthorityApplication {
     public static void main(String[] args){
-        SpringApplication.run(StartServerApplication.class,args);
+        SpringApplication.run(StartAuthorityApplication.class,args);
     }
 }

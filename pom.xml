@@ -12,7 +12,7 @@
 
   <modules>
     <module>alaska-core</module>
-    <module>alaska-server</module>
+    <module>alaska-authority</module>
       <module>alaska-api</module>
   </modules>
 
