@@ -2,7 +2,7 @@
 
     <contextName>logback</contextName>
 
-    <property name="log.path" value="/alaska_log/log.log"/>
+    <property name="log.path" value="./alaska_log/log-api.log"/>
 
     <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
         <!-- <filter class="com.example.logback.filter.MyFilter" /> -->
@@ -22,7 +22,7 @@
         </filter>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <!-- 每天一归档 -->
-            <fileNamePattern>/alaska_log/log-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
+            <fileNamePattern>./alaska_log/log-api-%d{yyyy-MM-dd}.%i.log</fileNamePattern>
             <!-- 单个日志文件最多 100MB, 60天的日志周期，最大不能超过20GB -->
             <maxFileSize>100MB</maxFileSize>
             <maxHistory>60</maxHistory>
