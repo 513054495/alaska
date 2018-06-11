@@ -13,7 +13,7 @@
     <dubbo:application name="api-consumer"></dubbo:application>
     <!-- 使用zookeeper注册中心暴露服务地址 -->
     <dubbo:registry address="zookeeper://127.0.0.1:2181" check="false"></dubbo:registry>
-
+    <dubbo:consumer check="false"/>
     <!-- 要引用的服务 -->
     <dubbo:reference interface="com.code90.studio.alaska.server.UserServer" id="userServer" retries="2" timeout="5000" cluster="failfast" ></dubbo:reference>
 </beans>
